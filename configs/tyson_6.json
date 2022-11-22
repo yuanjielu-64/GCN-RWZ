@@ -1,0 +1,36 @@
+{
+
+  "expt_name": "tyson",
+  "device": "cuda",
+
+  "main_feature": "Speed",
+
+  "speed_filepath": "./data/tyson/speed.csv",
+  "construction_filepath": "./data/tyson/construction.csv",
+  "diff_filepath": "./data/tyson/diff.csv",
+  "timeofday": "./data/tyson/timeofday.csv",
+  "time_filepath" : "./data/tyson/time.csv",
+  "A_matrix" : "./data/tyson/adj.csv",
+  "dis_matrix" : "./data/tyson/distance.csv",
+
+  "mask": "True",
+  "model_name": "GCNRWZ",
+  "T": 12,
+  "P": 6,
+  "in_channels": 1,
+  "num_nodes": 135,
+
+  "val_every": 1,
+  "test_every": 1,
+  "time_interval" : 300,
+  "batch_size" : 16,
+  "learning_rate" : 0.001,
+  "max_epochs" : 200,
+  "learning_rate_step_size" : 10,
+
+  "observation_number": 1,
+  "observation_length": 1,
+
+  "save": "./save/",
+  "log_dir": "./logs/"
+}

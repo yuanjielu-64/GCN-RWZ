@@ -1,0 +1,37 @@
+{
+
+  "expt_name": "richmond",
+  "device": "cuda",
+
+  "main_feature": "Speed",
+
+  "speed_filepath": "./data/richmond/speed_.csv",
+  "construction_filepath": "./data/richmond/construction_.csv",
+  "diff_filepath": "./data/richmond/diff_.csv",
+  "timeofday": "./data/richmond/timeofday.csv",
+  "volume_filepath" : "./data/richmond/volume_.csv",
+  "time_filepath" : "./data/richmond/time.csv",
+  "A_matrix" : "./data/richmond/adj.csv",
+  "dis_matrix" : "./data/richmond/distance.csv",
+
+  "mask": "True",
+  "model_name": "GCNRWZ",
+  "T": 12,
+  "P": 6,
+  "in_channels": 1,
+  "num_nodes": 95,
+
+  "val_every": 1,
+  "test_every": 1,
+  "time_interval" : 900,
+  "batch_size" : 16,
+  "learning_rate" : 0.001,
+  "max_epochs" : 100,
+  "learning_rate_step_size" : 10,
+
+  "observation_number": 3,
+  "observation_length": 240,
+
+  "save": "./save/",
+  "log_dir": "./logs/"
+}
